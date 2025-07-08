@@ -6,8 +6,6 @@ int main(){
     char*p = (char*)MyMalloc(5000*sizeof(char));
     printf("%p",p);
 
-   
-    
    char*q = (char*)MyMalloc(25000);
    /* MyFree(q);
     MyFree(p);
