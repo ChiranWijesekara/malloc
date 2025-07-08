@@ -4,7 +4,6 @@
 char memory[MEMORY_SIZE];  
 
 struct block *freeList = (void*)memory;  
-
  
 void initialize() {
     freeList = (struct block*)memory;
@@ -12,7 +11,6 @@ void initialize() {
     freeList->free = 1;
     freeList->next = NULL;
 }
-
 
 void split(struct block *fitting_slot, size_t size) {
     struct block *new = (struct block*)((char*)fitting_slot + size + sizeof(struct block));
