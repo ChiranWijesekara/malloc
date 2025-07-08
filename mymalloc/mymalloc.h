@@ -5,13 +5,11 @@
 
 #define MEMORY_SIZE 25000
 
-
 struct block {
     size_t size;
     int free;
     struct block *next;
 };
-
 
 void initialize();
 void split(struct block *fitting_slot, size_t size);
